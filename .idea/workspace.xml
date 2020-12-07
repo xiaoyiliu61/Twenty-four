@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9fe14be-ad59-4134-8306-c7987b80e4b9" name="Default Changelist" comment="" />
+    <list default="true" id="b9fe14be-ad59-4134-8306-c7987b80e4b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/JSONDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinConnect1204.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BitCoinConnect1204.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/BTCConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/BTCConnect.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lApWAABZz6XPQ5gVDHqvZEsp3V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,11 +33,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mybatis04" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\JAVA\BitCoinConnect1204\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JSONDemo">
     <configuration name="BTCConnect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bit.connect.BTCConnect" />
       <module name="BitCoinConnect1204" />
@@ -40,8 +57,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JSONDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bit.connect.JSONDemo" />
+      <module name="BitCoinConnect1204" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bit.connect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JSONDemo" />
         <item itemvalue="Application.BTCConnect" />
       </list>
     </recent_temporary>
@@ -57,7 +88,12 @@
       <option name="presentableId" value="Default" />
       <updated>1607049778581</updated>
       <workItem from="1607049782783" duration="2894000" />
-      <workItem from="1607252154453" duration="243000" />
+      <workItem from="1607252154453" duration="582000" />
+      <workItem from="1607252888904" duration="2188000" />
+      <workItem from="1607298995392" duration="620000" />
+      <workItem from="1607300498124" duration="861000" />
+      <workItem from="1607308064273" duration="3774000" />
+      <workItem from="1607338175322" duration="2620000" />
     </task>
     <servers />
   </component>
@@ -69,33 +105,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607049848325" />
-    <state x="572" y="167" key="FileChooserDialogImpl" timestamp="1607051300934">
+    <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser" timestamp="1607309480743">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="572" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607051300934" />
-    <state width="797" height="70" key="GridCell.Tab.0.bottom" timestamp="1607049954533">
+    <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607309480743" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1607253927626">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="797" height="70" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607049954533" />
-    <state width="797" height="70" key="GridCell.Tab.0.center" timestamp="1607049954532">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1607253927626" />
+    <state x="572" y="167" key="FileChooserDialogImpl" timestamp="1607300516223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="797" height="70" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607049954532" />
-    <state width="797" height="70" key="GridCell.Tab.0.left" timestamp="1607049954532">
+    <state x="572" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607300516223" />
+    <state width="714" height="132" key="GridCell.Tab.0.bottom" timestamp="1607312444905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="797" height="70" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607049954532" />
-    <state width="797" height="70" key="GridCell.Tab.0.right" timestamp="1607049954532">
+    <state width="714" height="132" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607312444905" />
+    <state width="714" height="132" key="GridCell.Tab.0.center" timestamp="1607312444905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="797" height="70" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607049954532" />
+    <state width="714" height="132" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607312444905" />
+    <state width="714" height="132" key="GridCell.Tab.0.left" timestamp="1607312444904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="714" height="132" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607312444904" />
+    <state width="714" height="132" key="GridCell.Tab.0.right" timestamp="1607312444905">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="714" height="132" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607312444905" />
     <state x="697" y="78" key="IDE.errors.dialog" timestamp="1607051653282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="697" y="78" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1607051653282" />
-    <state x="851" y="159" key="com.intellij.ide.util.TipDialog" timestamp="1607252162214">
+    <state x="851" y="159" key="com.intellij.ide.util.TipDialog" timestamp="1607338208367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="851" y="159" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607252162214" />
+    <state x="851" y="159" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607338208367" />
   </component>
 </project>
