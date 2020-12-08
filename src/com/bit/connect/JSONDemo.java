@@ -29,8 +29,8 @@ public class JSONDemo {
         jsonObject.put("sex","男");
         jsonObject.put("slgan","我变秃了，也变强了");
         jsonObject.put("languages","go,java,python");
-        String code =jsonObject.toJSONString();
-        System.out.println(code);
+        String coderJson =jsonObject.toJSONString();
+        System.out.println(coderJson);
     }
 
     static class Student{
