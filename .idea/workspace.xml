@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9fe14be-ad59-4134-8306-c7987b80e4b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/BcRPCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/RpcResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/demo/MapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/BTCService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/JSONDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/JSONDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bit/connect/BTCConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/BTCConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/JSONDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/JSONDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/BcRPCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/BcRPCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/JSONDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/demo/JSONDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1lApWAABZz6XPQ5gVDHqvZEsp3V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,6 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,7 +61,7 @@
       <module name="BitCoinConnect1204" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bit.connect.*" />
+          <option name="PATTERN" value="com.bit.connect.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,11 +70,11 @@
       </method>
     </configuration>
     <configuration name="JSONDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bit.connect.JSONDemo" />
+      <option name="MAIN_CLASS_NAME" value="com.bit.connect.demo.JSONDemo" />
       <module name="BitCoinConnect1204" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bit.connect.*" />
+          <option name="PATTERN" value="com.bit.connect.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +100,7 @@
       <module name="BitCoinConnect1204" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bit.connect.*" />
+          <option name="PATTERN" value="com.bit.connect.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,6 +140,11 @@
       <workItem from="1607406958611" duration="5990000" />
       <workItem from="1607413000911" duration="174000" />
       <workItem from="1607424466745" duration="5948000" />
+      <workItem from="1607431643411" duration="113000" />
+      <workItem from="1607473306534" duration="4000" />
+      <workItem from="1607474188111" duration="200000" />
+      <workItem from="1607474427901" duration="3000" />
+      <workItem from="1607478601668" duration="6624000" />
     </task>
     <servers />
   </component>
@@ -147,38 +160,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607428554949" />
+    <state x="582" y="278" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1607479258405">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="582" y="278" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1607479258405" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1607253927626">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1607253927626" />
-    <state x="572" y="167" key="FileChooserDialogImpl" timestamp="1607393887081">
+    <state x="572" y="167" key="FileChooserDialogImpl" timestamp="1607480080039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="572" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607393887081" />
-    <state width="806" height="156" key="GridCell.Tab.0.bottom" timestamp="1607431006129">
+    <state x="572" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607480080039" />
+    <state width="846" height="94" key="GridCell.Tab.0.bottom" timestamp="1607485257794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="806" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607431006129" />
-    <state width="806" height="156" key="GridCell.Tab.0.center" timestamp="1607431006127">
+    <state width="846" height="94" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607485257794" />
+    <state width="846" height="94" key="GridCell.Tab.0.center" timestamp="1607485257794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="806" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607431006127" />
-    <state width="806" height="156" key="GridCell.Tab.0.left" timestamp="1607431006124">
+    <state width="846" height="94" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607485257794" />
+    <state width="846" height="94" key="GridCell.Tab.0.left" timestamp="1607485257794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="806" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607431006124" />
-    <state width="806" height="156" key="GridCell.Tab.0.right" timestamp="1607431006128">
+    <state width="846" height="94" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607485257794" />
+    <state width="846" height="94" key="GridCell.Tab.0.right" timestamp="1607485257794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="806" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607431006128" />
+    <state width="846" height="94" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607485257794" />
     <state x="697" y="78" key="IDE.errors.dialog" timestamp="1607051653282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="697" y="78" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1607051653282" />
-    <state x="851" y="159" key="com.intellij.ide.util.TipDialog" timestamp="1607424483519">
+    <state x="380" y="63" key="SettingsEditor" timestamp="1607478791721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="851" y="159" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607424483519" />
+    <state x="380" y="63" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607478791721" />
+    <state x="851" y="159" key="com.intellij.ide.util.TipDialog" timestamp="1607478601095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="851" y="159" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607478601095" />
+    <state x="247" y="90" key="new project wizard" timestamp="1607480081382">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="247" y="90" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1607480081382" />
     <state x="841" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607409570007">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

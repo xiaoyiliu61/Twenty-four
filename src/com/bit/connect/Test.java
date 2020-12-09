@@ -4,17 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Test {
-    private static final String USER = "user";
-    private static final String PASSWORD  = "pwd";
-
     public static void main(String[] args) {
-        //1、生成一个新地址测试
-       String jsonStr= BcRPCUtils.prepareJSON("getnewaddress");
-        Map<String,String> map = new HashMap();
-        map.put("Authorization","Basic " + BcRPCUtils.base64Encode(USER+":"+PASSWORD));
-        Result result=BcRPCUtils.sendPost(map,jsonStr);
-        System.out.println("请求状态码："+result.getCode());
-        System.out.println("请求描述信息："+result.getMsg());
-        System.out.println("请求结果："+result.getData());
+       //获取区块的总数
+        BTCService service = new BTCService();
+        int count = service.getBlockCount();
+        System.out.println("比特币节点的区块数量"+count);
+        //获取最新区块的hash值
+        String hash = service.getBestBlockHash();
+        System.out.println("最新区块的hash"+hash);
+
+        float difficulty=service.getDifficulty();
+        System.out.println(difficulty);
     }
 }

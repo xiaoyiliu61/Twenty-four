@@ -18,7 +18,6 @@ import java.util.Map;
 import java.util.Set;
 
 public  class BcRPCUtils {
-    private  static  final  String RPCURL="http://127.0.0.1:8332";
     /**
      * 1、准备一个json数据
      * 2、发送一个post请求
@@ -45,7 +44,7 @@ public  class BcRPCUtils {
      */
      public static Result sendPost(Map<String,String>headers,String jsonStr){
          DefaultHttpClient client = new DefaultHttpClient();
-         HttpPost post = new HttpPost(RPCURL);
+         HttpPost post = new HttpPost(Constants.RPCURL);
          post.addHeader("Encoding","UTF-8");
          post.addHeader("Content-Type","application/json");
 

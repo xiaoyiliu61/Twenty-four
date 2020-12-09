@@ -1,4 +1,4 @@
-package com.bit.connect;
+package com.bit.connect.demo;
 
 import com.alibaba.fastjson.JSONObject;
 

@@ -15,13 +15,6 @@ import java.util.Base64;
 import static com.bit.connect.BcRPCUtils.base64Encode;
 
 public class BTCConnect {
-    //RPC服务的用户名，应该与比特币客户端节点的配置文件bitcoin.conf中配置的一样
-    private static final String RPCUSER = "user";
-    //RPC服务的用户密码，应该与比特币客户端节点的配置文件bitcoin.conf中配置一样
-    private static final String RPCPASSWORD = "pwd";
-
-    private static final String RPCURL = "http://127.0.0.1:8332";
-
     //maven :管理和构建项目的依赖和配置
 
     //依赖的配置：xml文件
@@ -51,13 +44,13 @@ public class BTCConnect {
        
         //2.发起一个post类型的网络请求，将第一步准备好json格式数据发送给rpc服务器
         DefaultHttpClient client = new DefaultHttpClient();
-        HttpPost post =new HttpPost(RPCURL);
+        HttpPost post =new HttpPost(Constants.RPCURL);
         //client执行一个post请求
         try {
             //设置请求头
             post.addHeader("Encoding","UTF-8");
             post.addHeader("Content-Type","application/json");
-            post.addHeader("Authorization","Basic "+base64Encode(RPCUSER+":"+RPCPASSWORD));
+            post.addHeader("Authorization","Basic "+base64Encode(Constants.RPCUSER+":"+Constants.RPCPASSWORD));
             //entity:实体,
             StringEntity entity = new StringEntity(jsonRpcStr);
             post.setEntity(entity);//设置请求的数据
