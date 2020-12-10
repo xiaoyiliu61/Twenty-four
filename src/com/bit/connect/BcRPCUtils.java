@@ -2,6 +2,8 @@ package com.bit.connect;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.bit.connect.entity.Result;
+import com.bit.connect.entity.RpcResult;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.ClientProtocolException;
@@ -42,7 +44,7 @@ public  class BcRPCUtils {
      * @param jsonStr 请求体数据
      * @return
      */
-     public static Result sendPost(Map<String,String>headers,String jsonStr){
+     public static Result sendPost(Map<String,String>headers, String jsonStr){
          DefaultHttpClient client = new DefaultHttpClient();
          HttpPost post = new HttpPost(Constants.RPCURL);
          post.addHeader("Encoding","UTF-8");

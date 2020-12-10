@@ -1,4 +1,4 @@
-package com.bit.connect;
+package com.bit.connect.entity;
 
 public class Result {
     private int code;//状态码

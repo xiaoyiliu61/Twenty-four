@@ -1,4 +1,4 @@
-package com.bit.connect;
+package com.bit.connect.entity;
 
 public class RpcResult {
     private String id;

@@ -35,8 +35,10 @@ public class BTCConnect {
         JSONObject object = new JSONObject();
         object.put("id",System.currentTimeMillis()+"");
         object.put("jsonrpc","2.0");//rpc服务协议版本
-        object.put("method","getdifficulty");
-        //object.put("params","1");//调用命令时的传参
+        object.put("method","getblockhash");
+        int[] arr = new int[1];//定义一个数组
+        arr[0]=1;
+        object.put("params",arr);//调用命令时的传参
         //object.put("Authorization","Basic"+ base64Encode(RPCUSER+"："+RPCPASSWORD));
         String jsonRpcStr = object.toJSONString();
         System.out.println(jsonRpcStr);
