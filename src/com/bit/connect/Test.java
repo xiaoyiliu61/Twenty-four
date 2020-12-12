@@ -1,13 +1,8 @@
 package com.bit.connect;
 
-import com.bit.connect.entity.Bip;
-import com.bit.connect.entity.BlockChainInfo;
-import com.bit.connect.entity.BlockData;
-import com.bit.connect.entity.bip1;
+import com.bit.connect.entity.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
@@ -44,7 +39,16 @@ public class Test {
         BlockData data = service.getBlockByHash("0000000082b5015589a3fdf2d4baff403e6f0be035a5d9742c1cae6295464449");
         System.out.println("根据hash值获取指定的区块信息:"+data.getHash());
 
-        String address = service.getNewAddress("ly","legacy");
+        String address = service.getNewAddress("ly", ADDRESS_TYPE.P2SH_SEGWIt);
         System.out.println("得到的地址是:"+address);
+
+        String connectionCount = service.getConnectionCount();
+        System.out.println("得到的连接总数："+connectionCount);
+
+        PreBlockData preData= service.preciousBlockByBlockHash("0000000082b5015589a3fdf2d4baff403e6f0be035a5d9742c1cae6295464449");
+        System.out.println("最早的区块信息："+preData);
+
+        Nodeinfo nodeinfo = service.getAddedNodeInfo("default");
+        System.out.println(nodeinfo);
     }
 }

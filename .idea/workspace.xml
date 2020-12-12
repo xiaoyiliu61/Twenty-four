@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9fe14be-ad59-4134-8306-c7987b80e4b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/demo/EnumDEmo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/demo/Week.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/Bip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/BipSoftForks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/BlockChainInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/BlockData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/Reject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/SoftFork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/bip1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/ADDRESS_TYPE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/CHAINTIPS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/Nodeaddresses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/Nodeinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/PreBlockData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BTCService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BcRPCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/BcRPCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/RpcResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BitCoinConnect1204/com/bit/connect/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/BTCConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/BTCConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bit/connect/BTCService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/BTCService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/BcRPCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/BcRPCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/RpcResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/entity/RpcResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bit/connect/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bit/connect/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bit/connect/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +60,7 @@
       <recent name="C:\Users\pc\JAVA\BitCoinConnect1204\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EnumDEmo">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="BTCConnect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bit.connect.BTCConnect" />
       <module name="BitCoinConnect1204" />
@@ -138,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EnumDEmo" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.EnumDEmo" />
         <item itemvalue="Application.BTCConnect" />
         <item itemvalue="Application.MapDemo" />
         <item itemvalue="Application.JSONDemo" />
@@ -177,7 +167,13 @@
       <workItem from="1607510680569" duration="4111000" />
       <workItem from="1607559899351" duration="6354000" />
       <workItem from="1607580157419" duration="5685000" />
-      <workItem from="1607596913138" duration="875000" />
+      <workItem from="1607596913138" duration="1032000" />
+      <workItem from="1607598371034" duration="5211000" />
+      <workItem from="1607604426387" duration="79000" />
+      <workItem from="1607652252356" duration="1667000" />
+      <workItem from="1607655262137" duration="610000" />
+      <workItem from="1607666203624" duration="5515000" />
+      <workItem from="1607767338134" duration="788000" />
     </task>
     <servers />
   </component>
@@ -189,10 +185,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607049848325" />
-    <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser" timestamp="1607583040369">
+    <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser" timestamp="1607603349685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607583040369" />
+    <state x="964" y="108" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607603349685" />
     <state x="582" y="278" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1607479258405">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -205,22 +201,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="572" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607480080039" />
-    <state width="846" height="128" key="GridCell.Tab.0.bottom" timestamp="1607585894385">
+    <state width="654" height="128" key="GridCell.Tab.0.bottom" timestamp="1607672820758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="846" height="128" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607585894385" />
-    <state width="846" height="128" key="GridCell.Tab.0.center" timestamp="1607585894385">
+    <state width="654" height="128" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607672820758" />
+    <state width="654" height="128" key="GridCell.Tab.0.center" timestamp="1607672820758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="846" height="128" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607585894385" />
-    <state width="846" height="128" key="GridCell.Tab.0.left" timestamp="1607585894384">
+    <state width="654" height="128" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607672820758" />
+    <state width="654" height="128" key="GridCell.Tab.0.left" timestamp="1607672820758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="846" height="128" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607585894384" />
-    <state width="846" height="128" key="GridCell.Tab.0.right" timestamp="1607585894385">
+    <state width="654" height="128" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607672820758" />
+    <state width="654" height="128" key="GridCell.Tab.0.right" timestamp="1607672820758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="846" height="128" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607585894385" />
+    <state width="654" height="128" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607672820758" />
     <state x="697" y="78" key="IDE.errors.dialog" timestamp="1607051653282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -229,17 +225,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="380" y="63" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607478791721" />
-    <state x="851" y="159" key="com.intellij.ide.util.TipDialog" timestamp="1607597862736">
+    <state x="851" y="159" key="com.intellij.ide.util.TipDialog" timestamp="1607767342016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="851" y="159" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607597862736" />
+    <state x="851" y="159" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607767342016" />
     <state x="247" y="90" key="new project wizard" timestamp="1607480081382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="247" y="90" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1607480081382" />
-    <state x="841" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607409570007">
+    <state x="842" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607667927564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="841" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607409570007" />
+    <state x="842" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607667927564" />
   </component>
 </project>
