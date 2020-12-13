@@ -14,10 +14,15 @@ public class Constants {
      public static final String ADDRESS_BECH32="bech32";
 
      //rpc服务命令
+
+    //获取区块的总数
     public static final String GETBLOCKCOUNT="getblockcount";
     public static final String GETBESTBLOCKHASH="getbestblockhash";
+    //获取区块的难度
     public static final String GETDIFFICULTY="getdifficulty";
+    //获取区块的信息
     public static final String GETBLOCKCHAININFO="getblockchaininfo";
+    //获取区块的hash值
     public static final String GETBLOCKHASH="getblockhash";
     public static final String PRECIOUSBLOCK="preciousblock";
     //获取指定区块的信息
@@ -26,7 +31,11 @@ public class Constants {
     public static final String GETNEWADDRESS="getnewaddress";
     public static final String GETCOUNNECTIONCOUNT="getconnectioncount";
     public static final String GETADDEDNODEINFO="getaddednodeinfo";
+    public static final String GETMEMPOOLINFO="getmempoolinfo";
     public static final String GETCHAINTIPS="getchaintips";
+    public static final String GETBLOCKFILTER="getblockfilter";
+    public static final String LISTLOCKUNSPENT="listlockunspent";
+    public static final String GETTXOUTSETINFO="gettxoutsetinfo";
     /**
      * 该方法用于根据枚举类型返回对应的比特币地址的类型对应的字符串
      * @param type 枚举

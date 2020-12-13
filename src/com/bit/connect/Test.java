@@ -49,6 +49,21 @@ public class Test {
         System.out.println("最早的区块信息："+preData);
 
         Nodeinfo nodeinfo = service.getAddedNodeInfo("default");
-        System.out.println(nodeinfo);
+        System.out.println("得到添加的节点信息"+nodeinfo);
+
+        MemPool memPool = service.getMemPoolInfo();
+        System.out.println("内存池信息"+memPool.getSize());
+
+        List<ChainTip> chainTips =service.getChainTips();
+        System.out.println("获取链的技巧"+chainTips);
+
+        BlockFilter blockFilter = service.getBlockFilter("00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09",("basic"));
+        System.out.println("得到区块过滤"+blockFilter);
+
+        List<ListLock> listLocks =service.listLockUnspent();
+        System.out.println("锁住未消耗的列表"+listLocks.hashCode());
+
+        Txoutset txoutset = service.getTxOutsetInfo();
+        System.out.println("通过txoutset信息得到高度:"+txoutset.getHeight());
     }
 }

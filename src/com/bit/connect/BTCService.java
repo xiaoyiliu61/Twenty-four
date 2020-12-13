@@ -1,11 +1,13 @@
 package com.bit.connect;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.bit.connect.entity.*;
 import org.apache.http.HttpStatus;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class BTCService {
@@ -14,18 +16,72 @@ public class BTCService {
         map.put("Authorization", "Basic " + BcRPCUtils.base64Encode(Constants.RPCUSER + ":" + Constants.RPCPASSWORD));
     }
 
-    public CHAINTIPS getChainTips(){
-        String json = BcRPCUtils.prepareJSON(Constants.GETCHAINTIPS);
+    public Txoutset getTxOutsetInfo(){
+        String json = BcRPCUtils.prepareJSON(Constants.GETTXOUTSETINFO);
         Result result = BcRPCUtils.sendPost(map,json);
-        if (result==null);{
+        if (result ==null){
             return null;
         }
         if (result.getCode()==HttpStatus.SC_OK){
-            return JSON.parseObject(result.getData().getResult());
+            return JSONObject.parseObject(result.getData().getResult(),Txoutset.class);
         }
         return null;
     }
 
+    public List<ListLock> listLockUnspent(){
+        String json = BcRPCUtils.prepareJSON(Constants.LISTLOCKUNSPENT);
+        Result result = BcRPCUtils.sendPost(map,json);
+        if (result==null){
+            return null;
+        }
+        if (result.getCode()==HttpStatus.SC_OK){
+            String  unspent = result.getData().getResult();
+            return JSONArray.parseArray(unspent,ListLock.class);
+        }else{
+            return null;
+        }
+    }
+
+    public BlockFilter getBlockFilter(String blockHash ,String filterType){
+        String json = BcRPCUtils.prepareJSON(Constants.GETBLOCKFILTER,blockHash,filterType);
+        Result result = BcRPCUtils.sendPost(map,json);
+        if (result==null){
+            return null;
+        }
+        if (result.getCode()==HttpStatus.SC_OK){
+            String filter = result.getData().getResult();
+            return JSONObject.parseObject(filter,BlockFilter.class);
+        }
+        return null;
+    }
+
+    public List<ChainTip> getChainTips(){
+        String json = BcRPCUtils.prepareJSON(Constants.GETCHAINTIPS);
+        Result result = BcRPCUtils.sendPost(map,json);
+        if (result==null){
+            return null;
+        }
+        if (result.getCode()==HttpStatus.SC_OK){
+            String  tips = result.getData().getResult();
+            return JSONArray.parseArray(tips,ChainTip.class);
+        }else{
+            return null;
+        }
+    }
+
+    public MemPool getMemPoolInfo(){
+        String json = BcRPCUtils.prepareJSON(Constants.GETMEMPOOLINFO);
+        Result result = BcRPCUtils.sendPost(map,json);
+        if (result==null){
+            return null;
+        }
+        if (result.getCode()==HttpStatus.SC_OK){
+            String  info= result.getData().getResult();
+            return JSON.parseObject(info, MemPool.class);
+        }else{
+            return null;
+        }
+    }
 
     public Nodeinfo getAddedNodeInfo(String node){
         String json = BcRPCUtils.prepareJSON(Constants.GETADDEDNODEINFO,node);
@@ -82,7 +138,7 @@ public class BTCService {
             return null;
         }
         if (result.getCode()==HttpStatus.SC_OK){
-            return JSON.parseObject(result.getData().getResult(), BlockData.class);
+            return JSONArray.parseObject(result.getData().getResult(), BlockData.class);
         }
         return null;
     }
@@ -172,7 +228,6 @@ public class BTCService {
         assert result != null;
         if (result.getCode() == HttpStatus.SC_OK) {
             return  result.getData().getResult();
-
         }
         return null;
     }
