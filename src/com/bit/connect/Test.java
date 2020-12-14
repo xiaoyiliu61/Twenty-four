@@ -45,7 +45,7 @@ public class Test {
         String connectionCount = service.getConnectionCount();
         System.out.println("得到的连接总数："+connectionCount);
 
-        PreBlockData preData= service.preciousBlockByBlockHash("0000000082b5015589a3fdf2d4baff403e6f0be035a5d9742c1cae6295464449");
+        PreBlockData preData= service.preciousBlockByBlockHash("000000000000016f317ae29898169ef9612823883d4dfd472e37de47ed618850");
         System.out.println("最早的区块信息："+preData);
 
         Nodeinfo nodeinfo = service.getAddedNodeInfo("default");
@@ -61,9 +61,12 @@ public class Test {
         System.out.println("得到区块过滤"+blockFilter);
 
         List<ListLock> listLocks =service.listLockUnspent();
-        System.out.println("锁住未消耗的列表"+listLocks.hashCode());
+        System.out.println("锁住未消耗的列表"+listLocks);
 
         Txoutset txoutset = service.getTxOutsetInfo();
-        System.out.println("通过txoutset信息得到高度:"+txoutset.getHeight());
+        System.out.println("通过文本开头信息得到高度:"+txoutset.getHeight());
+
+        WaitBlock waitBlock = service.waitForNewBlock(3);
+        System.out.println("根据新区块的推迟时间获取hash"+waitBlock.getHash());
     }
 }

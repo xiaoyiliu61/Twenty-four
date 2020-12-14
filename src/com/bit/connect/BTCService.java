@@ -16,6 +16,26 @@ public class BTCService {
         map.put("Authorization", "Basic " + BcRPCUtils.base64Encode(Constants.RPCUSER + ":" + Constants.RPCPASSWORD));
     }
 
+    /**
+     * 根据新的区块的推迟时间获取值
+     * @param num
+     * @return
+     */
+    public WaitBlock waitForNewBlock(int num){
+        String json = BcRPCUtils.prepareJSON(Constants.WAITFORNEWBLOCK,num);
+        Result result = BcRPCUtils.sendPost(map,json);
+        if (result==null){
+            return null ;
+        }
+        if (result.getCode()==HttpStatus.SC_OK){
+            return JSONObject.parseObject(result.getData().getResult(),WaitBlock.class);
+        }
+        return null;
+    }
+    /**
+     * 获取文本开头信息
+     * @return
+     */
     public Txoutset getTxOutsetInfo(){
         String json = BcRPCUtils.prepareJSON(Constants.GETTXOUTSETINFO);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -28,6 +48,10 @@ public class BTCService {
         return null;
     }
 
+    /**
+     * 锁住未消耗的列表信息
+     * @return
+     */
     public List<ListLock> listLockUnspent(){
         String json = BcRPCUtils.prepareJSON(Constants.LISTLOCKUNSPENT);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -42,6 +66,12 @@ public class BTCService {
         }
     }
 
+    /**
+     * 得到区块过滤后信息
+     * @param blockHash
+     * @param filterType
+     * @return
+     */
     public BlockFilter getBlockFilter(String blockHash ,String filterType){
         String json = BcRPCUtils.prepareJSON(Constants.GETBLOCKFILTER,blockHash,filterType);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -55,6 +85,10 @@ public class BTCService {
         return null;
     }
 
+    /**
+     * 获取链的技巧
+     * @return
+     */
     public List<ChainTip> getChainTips(){
         String json = BcRPCUtils.prepareJSON(Constants.GETCHAINTIPS);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -69,6 +103,10 @@ public class BTCService {
         }
     }
 
+    /**
+     * 获取内存池的信息
+     * @return
+     */
     public MemPool getMemPoolInfo(){
         String json = BcRPCUtils.prepareJSON(Constants.GETMEMPOOLINFO);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -83,6 +121,11 @@ public class BTCService {
         }
     }
 
+    /**
+     * 获取得到的节点信息
+     * @param node
+     * @return
+     */
     public Nodeinfo getAddedNodeInfo(String node){
         String json = BcRPCUtils.prepareJSON(Constants.GETADDEDNODEINFO,node);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -95,6 +138,10 @@ public class BTCService {
         return null;
     }
 
+    /**
+     * 获取连接总数
+     * @return
+     */
     public String getConnectionCount(){
         String json = BcRPCUtils.prepareJSON(Constants.GETCOUNNECTIONCOUNT);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -143,6 +190,11 @@ public class BTCService {
         return null;
     }
 
+    /**
+     * 根据区块hash获取前一个区块
+     * @param blockHash
+     * @return
+     */
     public PreBlockData preciousBlockByBlockHash(String blockHash){
         String json = BcRPCUtils.prepareJSON(Constants.PRECIOUSBLOCK,blockHash);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -188,6 +240,10 @@ public class BTCService {
     }
 
 
+    /**
+     * 获取区块的信息
+     * @return
+     */
     public Object getBlockChainInfo(){
         String json = BcRPCUtils.prepareJSON(Constants.GETBLOCKCHAININFO);
         Result result = BcRPCUtils.sendPost(map,json);
@@ -203,6 +259,10 @@ public class BTCService {
         }
     }
 
+    /**
+     * 获取区块的难度
+     * @return
+     */
     public double getDifficulty() {
         String json = BcRPCUtils.prepareJSON(Constants.GETDIFFICULTY);
         Result result = BcRPCUtils.sendPost(map, json);

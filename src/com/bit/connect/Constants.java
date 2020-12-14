@@ -36,6 +36,7 @@ public class Constants {
     public static final String GETBLOCKFILTER="getblockfilter";
     public static final String LISTLOCKUNSPENT="listlockunspent";
     public static final String GETTXOUTSETINFO="gettxoutsetinfo";
+    public static final String WAITFORNEWBLOCK="waitfornewblock";
     /**
      * 该方法用于根据枚举类型返回对应的比特币地址的类型对应的字符串
      * @param type 枚举
